@@ -1,2 +1,3 @@
-# Pericles
-首次提交代码
+# Android开发中通用工具类封装
+>#BaseActivity
+'setTitle();'
