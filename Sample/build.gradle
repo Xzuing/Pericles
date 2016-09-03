@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.Pericles"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //v7包
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    //卡片条目
+    compile 'com.android.support:cardview-v7:23.0.1'
+
+    //Toolbar
+    compile 'com.android.support:design:23.0.1'
+    //数据解析
+    compile 'com.google.code.gson:gson:2.7'
+    //图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络请求
+    compile 'com.kymjs.rxvolley:okhttp:1.0.9'
+    //注解
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //事件总线
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //数据库
+    compile 'org.greenrobot:greendao:3.1.1'
+    compile project(path: ':Library')
+}

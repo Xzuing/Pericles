@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--仿Ios对话框-Dialog颜色-->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <!--标题颜色-->
+    <color name="title_color">#ff0dc0f8</color>
+    <!--黑色-->
+    <color name="black">#000</color>
+    <!--白色-->
+    <color name="white">#fff</color>
+    <!--半透明颜色-->
+    <color name="translucent_color">#50808080</color>
+</resources>
